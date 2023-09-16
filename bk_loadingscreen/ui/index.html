@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+	<meta charset="UTF-8">
+	<title>CodePen - Glassmorphism &amp; VanillaTilt</title>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>Glassmorphism </title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+		<link rel="stylesheet" type="text/css" href="style.css"><link rel="stylesheet" href="./style.css">
+	</head>
+	<body>
+
+	<!-- partial:index.partial.html -->
+		<div class="container-02">
+			<h1>. </h1>
+			<h1>. </h1>
+			<h2>Discords</h2>
+			<div class="glassmorphic-card">
+				<div class="imgBox">
+					<i class="fa fa-pencil-ruler"></i>
+				</div>
+				<div class="contentBox">
+					<h3>Discords</h3>
+					<p>Our Server is also associated with a FiveM Roleplay server to join it, click on Roleplay and to join our freeroam server, click Freeroam </p>
+					<a onclick="window.invokeNative('openUrl', 'https://discord.gg/78VRgczrrF')">Freeroam</a>
+					<a onclick="window.invokeNative('openUrl', 'https://discord.gg/78VRgczrrF')">Roleplay</a>
+				</div>
+			</div>
+			<p><span>Discord:</span> Your Place to Talk and Hang Out</p>
+		</div>
+
+		<div class="container-02">
+			<h2>Global Freeroam</h2>
+			<div class="glassmorphic-card2">
+				<div class="imgBox">
+					<i class="fa fa-pencil-ruler"></i>
+				</div>
+				<div class="contentBox">
+					<h3>Be Respectful</h3>
+					<p>We respect you as well as others. Please follow the rules and avoid Racism, Dialouges and fights</p>
+					<a onclick="window.invokeNative('openUrl', 'https://discord.gg/QFDgDwPgfD')">Read More</a>
+					
+				</div>
+			</div>
+			<p><span>Global Freeroam:</span> A perfect balance of peace and chaos </p>
+		</div>
+
+
+		<div class="container-02">
+			<h1>. </h1>
+			<h1>. </h1>
+			<h2>Chill and Relax</h2>
+			<div class="glassmorphic-card3">
+				<div class="imgBox">
+					<i class="fa fa-pencil-ruler"></i>
+				</div>
+				<div class="contentBox">
+					<h3>Are You Bored </h3>
+					<p>If you are bored at this screen, click below to play a Small game</p>
+					<a onclick="window.invokeNative('openUrl', 'http://slither.io/')"><span class="icon"><i class="fas fa-gamepad background"></i></span></a>
+				</div>
+			</div>
+			<p><span>CSS Property:</span> Backdrop-Filter</p>
+		</div>
+
+
+		<!-- partial -->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js'></script><script  src="./script.js"></script>
+			<script>
+			document.querySelectorAll('a').forEach(element => {
+			element.addEventListener('click', e => {
+			e.preventDefault()
+			
+			window.invokeNative('openUrl', e.target.href)
+			})
+			})
+			</script>
+
+	</body>
+	<script src="ui/app.js"></script>
+	<script src="ui/game.js"></script>
+	<script src="ui/snow.js"></script>
+</html>
